@@ -1,6 +1,7 @@
 #include "Datapath.h"
 #include "Context.h"
 #include "RType.h"
+#include "IType.h"
 
 #ifndef CPU_H
 #define CPU_H
@@ -16,6 +17,7 @@ private:
 	Datapath components;
 	Context context;
 	RType R;
+	IType I;
 };
 
 #endif

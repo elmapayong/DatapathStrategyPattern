@@ -54,6 +54,9 @@
     <ClInclude Include="RType.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="IType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Adder.cpp">
@@ -90,6 +93,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="RType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="IType.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

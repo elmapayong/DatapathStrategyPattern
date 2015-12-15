@@ -2,6 +2,8 @@
 
 void CPU::run()
 {
+	//DELETE THIS
+	PC = 10;
 
 	instruction = components.instr_mem.instruction_array[PC];
 
@@ -11,6 +13,9 @@ void CPU::run()
 	
 	if (opcode == 0)
 		context.setType(R);
+	else if (opcode == 0x02 || opcode == 0x03){}
+	else
+		context.setType(I);
 	
 		
 		
