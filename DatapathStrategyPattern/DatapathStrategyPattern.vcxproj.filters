@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Strategy">
+      <UniqueIdentifier>{21b4d349-4cee-488e-a980-aa837b159caa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Strategy">
+      <UniqueIdentifier>{799cac5b-d046-48cf-8481-291c25e0e258}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Adder.h">
@@ -25,9 +31,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ALU_Control.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Context.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Control.h">
@@ -51,11 +54,17 @@
     <ClInclude Include="Registers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RType.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Context.h">
+      <Filter>Header Files\Strategy</Filter>
     </ClInclude>
     <ClInclude Include="IType.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="RType.h">
+      <Filter>Header Files\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="IType_lw.h">
+      <Filter>Header Files\Strategy</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -92,10 +101,13 @@
     <ClCompile Include="Registers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RType.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="IType.cpp">
+      <Filter>Source Files\Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="RType.cpp">
+      <Filter>Source Files\Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="IType_lw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

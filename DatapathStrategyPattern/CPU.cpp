@@ -2,20 +2,40 @@
 
 void CPU::run()
 {
+	int type;
 	//DELETE THIS
-	PC = 10;
+	PC = 6;
 
 	instruction = components.instr_mem.instruction_array[PC];
 
 	//find opcode
 	opcode = (instruction & 0xFC000000);	//0b11111100000000000000000000000000
 	opcode >>= 26;
+
 	
 	if (opcode == 0)
+	{
 		context.setType(R);
-	else if (opcode == 0x02 || opcode == 0x03){}
+	}
+	else if (opcode == 0x02 || opcode == 0x03)
+	{
+		type = opcode >> 3;
+		//I-format ANDi, ORi, XORi, Addi, Subi
+		if (type == 1)
+			context.setType(I);
+		//I-format lw
+		else if (type == 4)		//100
+			;
+		//I-format sw
+		else if (type == 5)		//101
+			;
+
+	}
 	else
+	{
 		context.setType(I);
+	}
+		
 	
 		
 		

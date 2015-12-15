@@ -1,14 +1,15 @@
-#include "IType.h"
+#include "IType_lw.h"
 
-void IType::run(int op, int inst, Datapath *comp)
+void IType_lw::run(int op, int inst, Datapath *comp)
 {
 	rs = (inst & 0x03E00000);
 	rs >>= 21;
 	rt = (inst & 0x1F0000);
 	rt >>= 16;
 	immediate = (inst & 0x0000FFFF);
-	ALUOp = 0;	//add
+	ALUOp = 0;	//for addition
 
+	comp->data_mem.setMemRead(true);
 	comp->registers.setRegWrite(true);
 	comp->registers.setWriteRegister(rt);
 	comp->registers.setReadRegisters(rs, rt);
@@ -19,7 +20,18 @@ void IType::run(int op, int inst, Datapath *comp)
 	comp->alu.setA(comp->registers.getRsData());
 	comp->alu.setB(immediate);
 	comp->alu.calculate();
-	comp->registers.setWriteData(comp->alu.getResult());
 
+	comp->data_mem.setAddress(comp->alu.getResult());
+	comp->data_mem.setWriteData(comp->registers.getRsData());
+	comp->data_mem.readMemory();
+
+	comp->registers.setWriteData(comp->data_mem.getReadData());
 	comp->registers.writeDataIntoReg();
+
+	//ALUSrc = true;
+	//MemtoReg = true;
+	////RegWrite = true;
+	//MemRead = true;
+	//ALUOp = 0;		//000 for addition
+
 }
