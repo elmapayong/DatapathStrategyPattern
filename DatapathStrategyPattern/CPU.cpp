@@ -4,7 +4,7 @@ void CPU::run()
 {
 	int type;
 	//DELETE THIS
-	PC = 6;
+	PC = 10;
 
 	instruction = components.instr_mem.instruction_array[PC];
 

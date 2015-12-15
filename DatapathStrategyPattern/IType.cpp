@@ -7,7 +7,7 @@ void IType::run(int op, int inst, Datapath *comp)
 	rt = (inst & 0x1F0000);
 	rt >>= 16;
 	immediate = (inst & 0x0000FFFF);
-	ALUOp = 0;	//add
+	ALUOp = (op & 0x00000007);	//right most 3 bits
 
 	comp->registers.setRegWrite(true);
 	comp->registers.setWriteRegister(rt);
