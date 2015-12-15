@@ -12,11 +12,12 @@ void CPU::run()
 	opcode = (instruction & 0xFC000000);	//0b11111100000000000000000000000000
 	opcode >>= 26;
 
-	
+	//R-format
 	if (opcode == 0)
 	{
 		context.setType(R);
 	}
+	//I-Format
 	else if (opcode == 0x02 || opcode == 0x03)
 	{
 		type = opcode >> 3;
@@ -25,7 +26,7 @@ void CPU::run()
 			context.setType(I);
 		//I-format lw
 		else if (type == 4)		//100
-			;
+			context.setType(I_lw);
 		//I-format sw
 		else if (type == 5)		//101
 			;

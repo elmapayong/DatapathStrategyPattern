@@ -2,6 +2,7 @@
 #include "Context.h"
 #include "RType.h"
 #include "IType.h"
+#include "IType_lw.h"
 
 #ifndef CPU_H
 #define CPU_H
@@ -18,6 +19,7 @@ private:
 	Context context;
 	RType R;
 	IType I;
+	IType_lw I_lw;
 };
 
 #endif
