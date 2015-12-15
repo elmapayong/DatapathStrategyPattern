@@ -28,10 +28,6 @@ void IType_lw::run(int op, int inst, Datapath *comp)
 	comp->registers.setWriteData(comp->data_mem.getReadData());
 	comp->registers.writeDataIntoReg();
 
-	//ALUSrc = true;
-	//MemtoReg = true;
-	////RegWrite = true;
-	//MemRead = true;
-	//ALUOp = 0;		//000 for addition
+	comp->incrementPC();
 
 }

@@ -7,9 +7,6 @@ class AllTypes
 {
 public:
 	virtual void run(int, int, Datapath*) = 0;
-	void print(){
-
-	}
 };
 
 #endif

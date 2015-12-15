@@ -22,4 +22,6 @@ void IType::run(int op, int inst, Datapath *comp)
 	comp->registers.setWriteData(comp->alu.getResult());
 
 	comp->registers.writeDataIntoReg();
+
+	comp->incrementPC();
 }
