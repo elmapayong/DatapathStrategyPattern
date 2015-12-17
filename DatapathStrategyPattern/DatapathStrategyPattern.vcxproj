@@ -76,6 +76,7 @@
     <ClInclude Include="InstructionMemory.h" />
     <ClInclude Include="IType.h" />
     <ClInclude Include="IType_lw.h" />
+    <ClInclude Include="IType_sw.h" />
     <ClInclude Include="Mux.h" />
     <ClInclude Include="Registers.h" />
     <ClInclude Include="RType.h" />
@@ -91,6 +92,7 @@
     <ClCompile Include="InstructionMemory.cpp" />
     <ClCompile Include="IType.cpp" />
     <ClCompile Include="IType_lw.cpp" />
+    <ClCompile Include="IType_sw.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Mux.cpp" />
     <ClCompile Include="Registers.cpp" />

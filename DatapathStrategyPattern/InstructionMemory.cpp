@@ -55,42 +55,4 @@ InstructionMemory::FetchInstruction(int pc)
 	//for J-type
 	address = (instruction & 0x3FFFFFF);
 
-
-
-
-	//if (opcode == 0)
-	//	is_rtype_ = true;
-	//else if (opcode == 0x02 || opcode == 0x03)
-	//	is_jtype_ = true;
-	//else					// Assuming we're dealing with valid instructions this should suffice.
-	//	is_itype_ = true;	// Otherwise I would have to include a condition here as an "else if" 
-	//						// instead of "else".
-
-	//if (is_rtype_)
-	//{
-	//	rs = (rs & 0x3E0000);
-	//	rs >>= 21;
-	//	rt = (rt & 0x1F0000);
-	//	rt >>= 16;
-	//	rd = (rd & 0xF800);
-	//	rd >>= 11;
-	//	shamt = (shamt & 0x7C0);
-	//	shamt >>= 6;
-	//	funct = (funct & 0x3F);
-	//}
-	//else if (is_itype_)
-	//{
-	//	rs = (rs & 0x3E0000);
-	//	rs >>= 21;
-	//	rt = (rt & 0x1F0000);
-	//	rt >>= 16;
-	//	immediate = (immediate & 0xFFFF);
-	//	funct = 0;
-	//}
-	//else
-	//{
-	//	address = (address & 0x3FFFFFF);
-	//	funct = 0;
-	//}
-
 }

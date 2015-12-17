@@ -66,6 +66,9 @@
     <ClInclude Include="IType_lw.h">
       <Filter>Header Files\Strategy</Filter>
     </ClInclude>
+    <ClInclude Include="IType_sw.h">
+      <Filter>Header Files\Strategy</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Adder.cpp">
@@ -108,6 +111,9 @@
       <Filter>Source Files\Strategy</Filter>
     </ClCompile>
     <ClCompile Include="IType_lw.cpp">
+      <Filter>Source Files\Strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="IType_sw.cpp">
       <Filter>Source Files\Strategy</Filter>
     </ClCompile>
   </ItemGroup>
