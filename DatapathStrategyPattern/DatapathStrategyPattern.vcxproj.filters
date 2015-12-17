@@ -24,9 +24,6 @@
     <ClInclude Include="Adder.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="AllTypes.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ALU.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -70,6 +67,9 @@
       <Filter>Header Files\Strategy</Filter>
     </ClInclude>
     <ClInclude Include="JType.h">
+      <Filter>Header Files\Strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="AllTypes.h">
       <Filter>Header Files\Strategy</Filter>
     </ClInclude>
   </ItemGroup>
