@@ -108,7 +108,7 @@
       <Filter>Source Files\Strategy</Filter>
     </ClCompile>
     <ClCompile Include="IType_lw.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Strategy</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

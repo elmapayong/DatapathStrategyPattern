@@ -27,4 +27,5 @@ void RType::run(int op, int inst, Datapath *comp)
 
 	comp->registers.writeDataIntoReg();
 
+	comp->incrementPC();
 }

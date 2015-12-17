@@ -14,6 +14,7 @@ class Datapath
 {
 public:
 	Datapath();
+	int PC;
 	InstructionMemory instr_mem;
 	Adder PC_adder, branch_adder;
 	Control control;
@@ -23,6 +24,8 @@ public:
 	ALU alu;
 	DataMemory data_mem;
 	void printAll();
+	void incrementPC();
+	void setPC(int);
 
 
 //public:
